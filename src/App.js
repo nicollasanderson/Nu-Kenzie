@@ -10,9 +10,21 @@ function App() {
   ]);
   console.log(listTransactions);
   const [page, setPage] = useState("Welcome");
+  const [filtro, setFiltro] = useState([]);
+
+  function filterItens(tipo) {
+    const filtered = listTransactions.filter(
+      (element) => element.type === tipo
+    );
+    setFiltro(filtered);
+    tipo === "all" && setFiltro([]);
+  }
+
   function handleItem(item) {
     const filtered = listTransactions.filter((element) => element !== item);
+    const fitleredType = filtro.filter((element) => element !== item);
     setListTransactions(filtered);
+    setFiltro(fitleredType);
   }
 
   if (page === "Welcome") {
@@ -25,33 +37,12 @@ function App() {
           setListTransactions={setListTransactions}
           handleItem={handleItem}
           setPage={setPage}
+          filtro={filtro}
+          filterItens={filterItens}
         />
       </div>
     );
   }
-
-  // return (
-
-  //   // <div className="App">
-  //   //   <header className="App-header">
-  //   //     <div className="headerContainer">
-  //   //       <img src={Logo} />
-  //   //       <button>Inicio</button>
-  //   //     </div>
-  //   //   </header>
-  //   //   <main>
-  //   //     <div className="columnForm">
-  //   //       <Form
-  //   //         listTransactions={listTransactions}
-  //   //         setListTransactions={setListTransactions}
-  //   //       />
-  //   //       <TotalMoney listTransactions={listTransactions} />
-  //   //     </div>
-  //   //     <div className="columnList"></div>
-  //   //     <List listTransactions={listTransactions} handleItem={handleItem} />
-  //   //   </main>
-  //   // </div>
-  // );
 }
 
 export default App;

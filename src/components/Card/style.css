@@ -6,6 +6,12 @@
   margin-bottom: 32px;
   border-radius: 4px;
   border-left: 5px solid #e9ecef;
+  transition: background-color 0.3s ease-out 100ms;
+  transition: box-shadow 0.3s ease-out 100ms;
+}
+.divCardMain:hover {
+  background-color: white;
+  box-shadow: 0px 4px 42px -12px #00000040;
 }
 .borderGreen {
   border-left: 5px solid #03b898;

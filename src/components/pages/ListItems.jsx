@@ -8,6 +8,8 @@ function ListItemsPage({
   setListTransactions,
   handleItem,
   setPage,
+  filtro,
+  filterItens,
 }) {
   return (
     <div className="App">
@@ -26,7 +28,12 @@ function ListItemsPage({
           <TotalMoney listTransactions={listTransactions} />
         </div>
         <div className="columnList"></div>
-        <List listTransactions={listTransactions} handleItem={handleItem} />
+        <List
+          listTransactions={listTransactions}
+          handleItem={handleItem}
+          filtro={filtro}
+          filterItens={filterItens}
+        />
       </main>
     </div>
   );
