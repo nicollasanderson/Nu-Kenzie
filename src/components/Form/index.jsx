@@ -7,6 +7,10 @@ function Form({ listTransactions, setListTransactions }) {
   const [type, setType] = useState("entrada");
 
   function addToList() {
+    if (type !== "entrada") {
+      setValue(-Number(value));
+    }
+
     const newItem = {
       description,
       type,

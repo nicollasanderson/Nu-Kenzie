@@ -19,12 +19,14 @@ function App() {
     return <Welcome setPage={setPage} />;
   } else {
     return (
-      <ListItemsPage
-        listTransactions={listTransactions}
-        setListTransactions={setListTransactions}
-        handleItem={handleItem}
-        setPage={setPage}
-      />
+      <div className="App">
+        <ListItemsPage
+          listTransactions={listTransactions}
+          setListTransactions={setListTransactions}
+          handleItem={handleItem}
+          setPage={setPage}
+        />
+      </div>
     );
   }
 

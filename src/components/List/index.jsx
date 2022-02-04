@@ -9,6 +9,7 @@ function List({ listTransactions, handleItem }) {
         <div className="buttonsTopList">
           <p>Resumo financeiro</p>
           <div className="buttonsFilter">
+            {/* filterItens={() => filterItens("all")} */}
             <button>Todos</button>
             <button>Entradas</button>
             <button>Despesas</button>
