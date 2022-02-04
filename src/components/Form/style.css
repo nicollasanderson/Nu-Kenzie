@@ -14,9 +14,20 @@ label {
   color: black;
   font-size: 12px;
   font-family: "Inter", sans-serif;
-  display: block;
-  margin: 0 0 12px 6px;
+  margin: 0 0px 12px 6px;
   text-align: left;
+  width: 100px;
+}
+label[for="select"] {
+  margin-left: 20px;
+}
+.divInputs {
+  display: flex;
+  flex-flow: column;
+}
+.divValueType {
+  display: flex;
+  margin-top: 30px;
 }
 
 #description {

@@ -29,17 +29,23 @@ function Form({ listTransactions, setListTransactions }) {
         <p className="descEx">Ex: Compra de roupas</p>
 
         <div className="divValueType">
-          <label htmlFor="value">Valor</label>
-          <input
-            type="text"
-            id="value"
-            placeholder="R$"
-            onChange={(event) => setValue(event.target.value)}
-          />
-          <select onChange={(e) => setType(e.target.value)}>
-            <option value="entrada">Entrada</option>
-            <option value="saída">Saída</option>
-          </select>
+          <div className="divInputs">
+            <label htmlFor="value">Valor</label>
+            <input
+              type="text"
+              id="value"
+              placeholder="R$"
+              onChange={(event) => setValue(event.target.value)}
+            />
+          </div>
+
+          <div className="divInputs">
+            <label htmlFor="select">Tipo de valor</label>
+            <select id="select" onChange={(e) => setType(e.target.value)}>
+              <option value="entrada">Entrada</option>
+              <option value="saída">Despesas</option>
+            </select>
+          </div>
         </div>
 
         <button className="buttonSend" onClick={addToList}>
