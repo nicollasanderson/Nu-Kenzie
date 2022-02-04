@@ -1,0 +1,16 @@
+.divMain {
+  width: 374px;
+  height: 68px;
+  background-color: #e34981;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 160px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0px 4px 32px -12px #00000040;
+}
+
+.divMain p {
+  font-size: 16px;
+}

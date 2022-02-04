@@ -1,0 +1,48 @@
+.divCardMain {
+  min-height: 87px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  border-left: 5px solid #e9ecef;
+}
+.borderGreen {
+  border-left: 5px solid #03b898;
+}
+
+.cardInfos {
+  padding-left: 18px;
+}
+.cardInfos h3 {
+  color: black;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.cardInfos p {
+  font-size: 12px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.cardValueButton {
+  display: flex;
+  margin: 0 13px 0 0;
+  align-items: center;
+}
+.cardValueButton p {
+  font-size: 12px;
+  margin: 0;
+  width: 150px;
+}
+.cardValueButton button {
+  background-image: url("../../img/trash.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}

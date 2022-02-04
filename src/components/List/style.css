@@ -1,0 +1,42 @@
+.divList {
+  width: 70%;
+  height: 459px;
+  display: flex;
+  flex-flow: column;
+  color: black;
+  background-color: white;
+}
+.buttonsTopList {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonsTopList p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.buttonsTopList button {
+  background-color: #e9ecef;
+  border: none;
+  padding: 0 15px;
+  color: #868e96;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.buttonsTopList button:hover {
+  background-color: #868e96;
+  color: white;
+}
+.buttonsTopList button:focus {
+  background: #fd377e;
+  color: white;
+}
+.divList h3 {
+  color: #868e96;
+  font-size: 22px;
+  text-align: left;
+}
+.empty {
+  margin-bottom: 30px;
+}

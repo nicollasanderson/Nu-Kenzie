@@ -1,0 +1,36 @@
+.mainWelcome {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+}
+.divContainer {
+  margin: auto;
+  display: flex;
+}
+.divText {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  margin-right: 48px;
+  color: white;
+}
+.divText button {
+  width: 241px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #fd377e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.divText h1 {
+  font-size: 38px;
+  line-height: 48px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.divBg img {
+  width: 500px;
+}
